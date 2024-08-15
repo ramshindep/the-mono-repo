@@ -1,0 +1,12 @@
+org\dnyanyog\dto\AddAppointmentRequest.class
+org\dnyanyog\enums\ErrorCode.class
+org\dnyanyog\dto\AppointmentResponse.class
+org\dnyanyog\AppointmentServiceMain.class
+org\dnyanyog\dto\UpdateAppointmentRequest.class
+org\dnyanyog\repository\AppointmentRepository.class
+org\dnyanyog\service\AppointmentService.class
+org\dnyanyog\dto\AppointmentData.class
+org\dnyanyog\entity\Appointment.class
+org\dnyanyog\controller\AppointmentController.class
+org\dnyanyog\service\AppointmentServiceImpl.class
+org\dnyanyog\utility\CustomIdGenerator.class

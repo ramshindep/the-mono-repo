@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dnyanyog.addpatient.AddPatientController">
+   <children>
+      <AnchorPane fx:id="mypane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1360.0" style="-fx-background-color: #fffffff;" stylesheets="@Stylesheet.css">
+         <children>
+            <AnchorPane layoutY="59.0" prefHeight="641.0" prefWidth="180.0" styleClass="anchorpane-5" stylesheets="@../Style.css">
+               <children>
+                  <Button fx:id="dashboard" alignment="CENTER" layoutY="30.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="50.0" prefWidth="180.0" styleClass="button-2" stylesheets="@../Style.css" text="Dasboard" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cases" alignment="CENTER" layoutY="130.0" mnemonicParsing="false" onAction="#cases" prefHeight="50.0" prefWidth="180.0" styleClass="button-2" stylesheets="@../Style.css" text="Cases" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="appointments" alignment="CENTER" layoutY="180.0" mnemonicParsing="false" onAction="#appointments" prefHeight="50.0" prefWidth="180.0" styleClass="button-2" stylesheets="@../Style.css" text="Appointments" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logout" alignment="CENTER" layoutY="530.0" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="180.0" styleClass="button-2" stylesheets="@../Style.css" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="user" alignment="CENTER" layoutY="246.0" mnemonicParsing="false" onAction="#users" prefHeight="50.0" prefWidth="180.0" styleClass="button-2" stylesheets="@../Style.css" text="Users" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="patient" alignment="CENTER" layoutX="5.0" layoutY="80.0" mnemonicParsing="false" onAction="#patient" prefHeight="50.0" prefWidth="180.0" styleClass="anchorpane-11" stylesheets="@../Style.css" text="Patient" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="180.0" layoutY="58.0" prefHeight="642.0" prefWidth="1180.0" style="-fx-background-color: #ffffff;" stylesheets="@Stylesheet.css">
+               <children>
+                  <AnchorPane layoutX="30.0" layoutY="32.0" prefHeight="585.0" prefWidth="1120.0" styleClass="anchorpane-8" stylesheets="@../Style.css">
+                     <children>
+                        <Button fx:id="cancel" layoutX="338.0" layoutY="528.0" mnemonicParsing="false" onAction="#cancel" prefHeight="40.0" prefWidth="124.0" styleClass="button-3" stylesheets="@../Style.css" text="cancel" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="save" layoutX="757.0" layoutY="526.0" mnemonicParsing="false" onAction="#save" prefHeight="40.0" prefWidth="124.0" styleClass="button-4" stylesheets="@../Style.css" text="Save" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="patientNameEnglish" layoutX="338.0" layoutY="42.0" prefHeight="35.0" prefWidth="543.0" styleClass="textfield-1" stylesheets="@../Style.css">
+                           <font>
+                              <Font name="Calisto MT" size="16.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox fx:id="gender" layoutX="338.0" layoutY="244.0" prefHeight="35.0" prefWidth="543.0" styleClass="textfield-1" stylesheets="@../Style.css" />
+                        <Label layoutX="117.0" layoutY="44.0" prefHeight="30.0" prefWidth="180.0" text="Patient Name(English)">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="117.0" layoutY="115.0" prefHeight="22.0" prefWidth="180.0" text="Patient Name(Marathi)">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="117.0" layoutY="251.0" text="Gender">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="117.0" layoutY="184.0" prefHeight="22.0" prefWidth="130.0" text="Mobile Number">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="117.0" layoutY="316.0" prefHeight="22.0" prefWidth="146.0" text="Birth Date">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="birthDate" layoutX="338.0" layoutY="310.0" prefHeight="35.0" prefWidth="543.0" styleClass="textfield-1" stylesheets="@../../../OneDrive/Pictures/Style.css" />
+                        <Label layoutX="117.0" layoutY="384.0" prefHeight="22.0" prefWidth="180.0" text="First Examination Date">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="firstExaminationDate" layoutX="338.0" layoutY="377.0" prefHeight="35.0" prefWidth="543.0" styleClass="textfield-1" stylesheets="@../../../OneDrive/Pictures/Style.css" />
+                        <Label layoutX="117.0" layoutY="452.0" prefHeight="22.0" prefWidth="180.0" text="Address">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="createCase" layoutX="621.0" layoutY="526.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="124.0" styleClass="button-4" stylesheets="@../Style.css" text="Create Case" textFill="WHITE" visible="false">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="edit" layoutX="479.0" layoutY="526.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="124.0" styleClass="button-4" stylesheets="@../Style.css" text="Edit" textFill="WHITE" visible="false">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="patientNameMarathi" layoutX="338.0" layoutY="108.0" prefHeight="4.0" prefWidth="543.0" styleClass="textfield-1" stylesheets="@../Style.css">
+                           <font>
+                              <Font name="Shivaji01" size="20.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="mobileNo" layoutX="338.0" layoutY="177.0" prefHeight="35.0" prefWidth="543.0" styleClass="textfield-1" stylesheets="@../Style.css">
+                           <font>
+                              <Font name="Calisto MT" size="16.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="address" layoutX="338.0" layoutY="445.0" prefHeight="35.0" prefWidth="543.0" styleClass="textfield-1" stylesheets="@../Style.css">
+                           <font>
+                              <Font name="Calisto MT" size="16.0" />
+                           </font>
+                        </TextField>
+                        <AnchorPane fx:id="successfulMessage" layoutX="341.0" layoutY="486.0" prefHeight="27.0" prefWidth="171.0">
+                           <children>
+                              <AnchorPane fx:id="successfulMessage" layoutX="4.0" layoutY="1.0" prefHeight="35.0" prefWidth="386.0" visible="false">
+                                 <children>
+                                    <Label layoutX="126.0" layoutY="2.0" prefHeight="35.0" prefWidth="315.0" styleClass="label-3" stylesheets="@../Style.css" text="Patient Saved Successfully" textFill="#189274">
+                                       <font>
+                                          <Font name="Calibri Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/green-tick-button-image.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children></AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="60.0" prefWidth="1360.0" styleClass="anchorpane-7" stylesheets="@../Style.css">
+               <children>
+                  <AnchorPane layoutX="3.0" layoutY="5.0" prefHeight="50.0" prefWidth="180.0" styleClass="anchorpane-6" stylesheets="@Style.css">
+                     <children>
+                        <ImageView fx:id="sublogoImage" fitHeight="50.0" fitWidth="50.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logo2.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="55.0" layoutY="15.0" text="जी" textFill="#e16737">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="82.0" layoutY="15.0" text="वयुर्भवति">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1110.0" prefHeight="60.0" prefWidth="250.0" styleClass="anchorpane-3" stylesheets="@../Style.css">
+                     <children>
+                        <Label layoutX="70.0" layoutY="17.0" styleClass="label-1" stylesheets="@Style.css" text="User">
+                           <font>
+                              <Font name="Arial Unicode MS" size="18.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="15.0" layoutY="10.0" prefHeight="40.0" prefWidth="40.0" styleClass="profile-3" stylesheets="@Stylesheet.css">
+                           <children>
+                              <ImageView fx:id="userImage" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" styleClass="profile-3">
+                                 <image>
+                                    <Image url="@../images/profile-image.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="250.0" layoutY="5.0" styleClass="label-1" stylesheets="@Style.css" text="Add Patients">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
