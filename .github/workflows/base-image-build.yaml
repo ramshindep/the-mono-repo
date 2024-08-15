@@ -61,4 +61,4 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_PAT }}
 
       - name: docker push
-        run: docker push ${{ vars.DOCKER_HUB_REGISTRY }}/open-jdk24:latest
+        run: docker push ${{ vars.DOCKER_HUB_REGISTRY }}/openjdk24-slim:latest
