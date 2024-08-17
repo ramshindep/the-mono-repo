@@ -19,7 +19,11 @@ jobs:
          - name: checkout code
            uses: actions/checkout@v2
            
-
+         - name: Approve Licenses
+           run: |
+               license_finder approve "Apache 2.0"
+               license_finder approve "BSD"
+               license_finder approve "Eclipse Distribution License - v 1.0"
 
          - name: check status
            run:
