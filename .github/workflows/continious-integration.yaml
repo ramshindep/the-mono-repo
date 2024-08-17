@@ -20,7 +20,8 @@ jobs:
            uses: actions/checkout@v2  
 
 
-         - name:
+         - name: check status
+           run:
                  |
                  java -version
                  ls -ltr  
