@@ -50,3 +50,5 @@ public class AppointmentController {
     return appointmentService.getAppointmentByPatientId(patientId);
   }
 }
+
+
