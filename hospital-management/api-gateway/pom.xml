@@ -23,55 +23,35 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>com.spotify.fmt</groupId>
-				<artifactId>fmt-maven-plugin</artifactId>
-				<version>2.23</version>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 				<executions>
 					<execution>
 						<goals>
-							<goal>check</goal>
+							<goal>repackage</goal>
 						</goals>
 					</execution>
 				</executions>
 			</plugin>
-			 <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-                <plugin>
-    <groupId>io.fabric8</groupId>
-    <artifactId>docker-maven-plugin</artifactId>
-    <version>0.44.0</version>
-    <extensions>true</extensions>
-    <configuration>
-        <images>
-            <image>
-                <name>${project.groupId}/${project.artifactId}:latest</name>
-                <build>
-                    <dockerFile>${project.basedir}/dockerfile</dockerFile>
-                    <args>
-                        <imageName>${project.artifactId}-latest</imageName>
-                    </args>
-                </build>
-            </image>
-        </images>
-    </configuration>
-</plugin>
+			<plugin>
+				<groupId>io.fabric8</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.44.0</version>
+				<extensions>true</extensions>
+				<configuration>
+					<images>
+						<image>
+							<name>dnyanyog.org/${project.artifactId}:latest</name>
+							<build>
+								<dockerFile>${project.basedir}/dockerfile</dockerFile>
+								<args>
+									<imageName>${project.artifactId}-latest</imageName>
+								</args>
+							</build>
+						</image>
+					</images>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
-	
-	 <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub Maven Packages</name>
-            <url>https://maven.pkg.github.com/ramshindep/customer-service</url>
-        </repository>
-    </distributionManagement>
 </project>

@@ -1,0 +1,507 @@
+{
+  "reports" : {
+    "org.springframework.boot:spring-boot-starter-validation:jar:3.3.2:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-validation@3.3.2",
+      "description" : "Spring Boot Validation Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-validation@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.testng:testng:jar:7.10.2:test" : {
+      "coordinates" : "pkg:maven/org.testng/testng@7.10.2",
+      "description" : "TestNG is a testing framework.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.testng/testng@7.10.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework:spring-jdbc:jar:6.1.11:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-jdbc@6.1.11",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-jdbc@6.1.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.fasterxml.jackson.core:jackson-core:jar:2.17.2:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2",
+      "description" : "Core Jackson abstractions, basic JSON streaming API implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.junit.platform:junit-platform-engine:jar:1.10.3:test" : {
+      "coordinates" : "pkg:maven/org.junit.platform/junit-platform-engine@1.10.3",
+      "description" : "\"Module \"\"junit-platform-engine\"\" of JUnit 5.\"",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.junit.platform/junit-platform-engine@1.10.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework:spring-context:jar:6.1.11:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-context@6.1.11",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-context@6.1.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "net.bytebuddy:byte-buddy-agent:jar:1.14.18:test" : {
+      "coordinates" : "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.18",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.18?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.fasterxml.jackson.core:jackson-annotations:jar:2.17.2:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2",
+      "description" : "Core annotations used for value types, used by Jackson databinding package.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "javax.xml.bind:jaxb-api:jar:2.3.1:compile" : {
+      "coordinates" : "pkg:maven/javax.xml.bind/jaxb-api@2.3.1",
+      "description" : "JAXB (JSR 222) API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/javax.xml.bind/jaxb-api@2.3.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "ch.qos.logback:logback-classic:jar:1.5.6:compile" : {
+      "coordinates" : "pkg:maven/ch.qos.logback/logback-classic@1.5.6",
+      "description" : "Logback: the generic, reliable, fast and flexible logging library for Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/ch.qos.logback/logback-classic@1.5.6?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.boot:spring-boot-starter-logging:jar:3.3.2:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.3.2",
+      "description" : "Spring Boot Logger Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.boot:spring-boot-starter-aop:jar:3.3.2:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-aop@3.3.2",
+      "description" : "Spring Boot AOP Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-aop@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "net.minidev:json-smart:jar:2.5.1:test" : {
+      "coordinates" : "pkg:maven/net.minidev/json-smart@2.5.1",
+      "description" : "JSON (JavaScript Object Notation) is a lightweight data-interchange format.\n    It is easy for humans to read and write. It is easy for machines to parse and generate.\n    It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition\n    - December 1999. JSON is a text format that is completely language independent but uses\n    conventions that are familiar to programmers of the C-family of languages, including C, C++, C#,\n    Java, JavaScript, Perl, Python, and many others.\n    These properties make JSON an ideal data-interchange language.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.minidev/json-smart@2.5.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "antlr:antlr:jar:2.7.7:compile" : {
+      "coordinates" : "pkg:maven/antlr/antlr@2.7.7",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/antlr/antlr@2.7.7?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.boot:spring-boot-starter-jdbc:jar:3.3.2:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-jdbc@3.3.2",
+      "description" : "Spring Boot JDBC Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-jdbc@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.apache.logging.log4j:log4j-api:jar:2.23.1:compile" : {
+      "coordinates" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.23.1",
+      "description" : "The Log4J API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.logging.log4j/log4j-api@2.23.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.boot:spring-boot-starter-test:jar:3.3.2:test" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.3.2",
+      "description" : "Spring Boot Test Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-test@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.1.1.Final:compile" : {
+      "coordinates" : "pkg:maven/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec@1.1.1.Final",
+      "description" : "The Java Transaction 1.2 API classes",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec@1.1.1.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "javax.activation:javax.activation-api:jar:1.2.0:compile" : {
+      "coordinates" : "pkg:maven/javax.activation/javax.activation-api@1.2.0",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/javax.activation/javax.activation-api@1.2.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "net.minidev:accessors-smart:jar:2.5.1:test" : {
+      "coordinates" : "pkg:maven/net.minidev/accessors-smart@2.5.1",
+      "description" : "Java reflect give poor performance on getter setter an constructor calls,\naccessors-smart use ASM to speed up those calls.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.minidev/accessors-smart@2.5.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.opentest4j:opentest4j:jar:1.3.0:test" : {
+      "coordinates" : "pkg:maven/org.opentest4j/opentest4j@1.3.0",
+      "description" : "Open Test Alliance for the JVM",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.opentest4j/opentest4j@1.3.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.boot:spring-boot-starter:jar:3.3.2:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter@3.3.2",
+      "description" : "Spring Boot Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.codehaus.woodstox:stax2-api:jar:4.2.2:compile" : {
+      "coordinates" : "pkg:maven/org.codehaus.woodstox/stax2-api@4.2.2",
+      "description" : "Stax2 API is an extension to basic Stax 1.0 API that adds significant new functionality, such as full-featured bi-direction validation interface and high-performance Typed Access API.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.codehaus.woodstox/stax2-api@4.2.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.jboss.logging:jboss-logging:jar:3.5.3.Final:compile" : {
+      "coordinates" : "pkg:maven/org.jboss.logging/jboss-logging@3.5.3.Final",
+      "description" : "The JBoss Logging Framework",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.jboss.logging/jboss-logging@3.5.3.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.boot:spring-boot:jar:3.3.2:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot@3.3.2",
+      "description" : "Spring Boot",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "io.micrometer:micrometer-observation:jar:1.13.2:compile" : {
+      "coordinates" : "pkg:maven/io.micrometer/micrometer-observation@1.13.2",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/io.micrometer/micrometer-observation@1.13.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.junit.jupiter:junit-jupiter-params:jar:5.10.3:test" : {
+      "coordinates" : "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.10.3",
+      "description" : "\"Module \"\"junit-jupiter-params\"\" of JUnit 5.\"",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.junit.jupiter/junit-jupiter-params@5.10.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.17.2:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.17.2",
+      "description" : "Add-on module to support JSR-310 (Java 8 Date & Time API) data types.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.17.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.webjars:jquery:jar:3.7.1:test" : {
+      "coordinates" : "pkg:maven/org.webjars/jquery@3.7.1",
+      "description" : "WebJar for jQuery",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.webjars/jquery@3.7.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.hibernate.common:hibernate-commons-annotations:jar:5.1.2.Final:compile" : {
+      "coordinates" : "pkg:maven/org.hibernate.common/hibernate-commons-annotations@5.1.2.Final",
+      "description" : "Common reflection code used in support of annotation processing",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hibernate.common/hibernate-commons-annotations@5.1.2.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.apiguardian:apiguardian-api:jar:1.1.2:test" : {
+      "coordinates" : "pkg:maven/org.apiguardian/apiguardian-api@1.1.2",
+      "description" : "@API Guardian",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apiguardian/apiguardian-api@1.1.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.fasterxml.woodstox:woodstox-core:jar:6.7.0:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.woodstox/woodstox-core@6.7.0",
+      "description" : "Woodstox is a high-performance XML processor that\n        implements Stax (JSR-173), SAX2 and Stax2 APIs",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.woodstox/woodstox-core@6.7.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.dom4j:dom4j:jar:2.1.3:compile" : {
+      "coordinates" : "pkg:maven/org.dom4j/dom4j@2.1.3",
+      "description" : "flexible XML framework for Java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.dom4j/dom4j@2.1.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework:spring-orm:jar:6.1.11:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-orm@6.1.11",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-orm@6.1.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework:spring-expression:jar:6.1.11:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-expression@6.1.11",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-expression@6.1.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.data:spring-data-jpa:jar:3.3.2:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.data/spring-data-jpa@3.3.2",
+      "description" : "Spring Data module to provide sophisticated support for JPA repositories",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.data/spring-data-jpa@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.fasterxml.jackson.core:jackson-databind:jar:2.17.2:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2",
+      "description" : "General data-binding functionality for Jackson: works on core streaming API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.mockito:mockito-core:jar:5.11.0:test" : {
+      "coordinates" : "pkg:maven/org.mockito/mockito-core@5.11.0",
+      "description" : "Mock objects library for java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.mockito/mockito-core@5.11.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.fasterxml:classmate:jar:1.7.0:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml/classmate@1.7.0",
+      "description" : "Library for introspecting types with full generic information\nincluding resolving of field and method types.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml/classmate@1.7.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "io.micrometer:micrometer-commons:jar:1.13.2:compile" : {
+      "coordinates" : "pkg:maven/io.micrometer/micrometer-commons@1.13.2",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/io.micrometer/micrometer-commons@1.13.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework:spring-web:jar:6.1.12:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-web@6.1.12",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-web@6.1.12?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.slf4j:jul-to-slf4j:jar:2.0.13:compile" : {
+      "coordinates" : "pkg:maven/org.slf4j/jul-to-slf4j@2.0.13",
+      "description" : "JUL to SLF4J bridge",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.slf4j/jul-to-slf4j@2.0.13?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "jakarta.activation:jakarta.activation-api:jar:2.1.3:compile" : {
+      "coordinates" : "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.3",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/jakarta.activation/jakarta.activation-api@2.1.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.eclipse.angus:angus-activation:jar:2.0.2:runtime" : {
+      "coordinates" : "pkg:maven/org.eclipse.angus/angus-activation@2.0.2",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.eclipse.angus/angus-activation@2.0.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.objenesis:objenesis:jar:3.3:test" : {
+      "coordinates" : "pkg:maven/org.objenesis/objenesis@3.3",
+      "description" : "A library for instantiating Java objects",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.objenesis/objenesis@3.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.jayway.jsonpath:json-path:jar:2.9.0:test" : {
+      "coordinates" : "pkg:maven/com.jayway.jsonpath/json-path@2.9.0",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.jayway.jsonpath/json-path@2.9.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.zaxxer:HikariCP:jar:5.1.0:compile" : {
+      "coordinates" : "pkg:maven/com.zaxxer/HikariCP@5.1.0",
+      "description" : "Ultimate JDBC Connection Pool",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.zaxxer/HikariCP@5.1.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.17.2:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.17.2",
+      "description" : "Add-on module for Jackson (http://jackson.codehaus.org) to support\nJDK 8 data types.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.17.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.17.2:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.17.2",
+      "description" : "Add-on module for Jackson (http://jackson.codehaus.org) to support\nintrospection of method/constructor parameter names, without having to add explicit property name annotation.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.17.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework:spring-tx:jar:6.1.11:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-tx@6.1.11",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-tx@6.1.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "ch.qos.logback:logback-core:jar:1.5.6:compile" : {
+      "coordinates" : "pkg:maven/ch.qos.logback/logback-core@1.5.6",
+      "description" : "Logback: the generic, reliable, fast and flexible logging library for Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/ch.qos.logback/logback-core@1.5.6?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "jakarta.persistence:jakarta.persistence-api:jar:3.1.0:compile" : {
+      "coordinates" : "pkg:maven/jakarta.persistence/jakarta.persistence-api@3.1.0",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/jakarta.persistence/jakarta.persistence-api@3.1.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.slf4j:slf4j-api:jar:2.0.13:compile" : {
+      "coordinates" : "pkg:maven/org.slf4j/slf4j-api@2.0.13",
+      "description" : "The slf4j API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.slf4j/slf4j-api@2.0.13?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.glassfish.jaxb:jaxb-core:jar:4.0.5:compile" : {
+      "coordinates" : "pkg:maven/org.glassfish.jaxb/jaxb-core@4.0.5",
+      "description" : "JAXB Core module. Contains sources required by XJC, JXC and Runtime modules.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.glassfish.jaxb/jaxb-core@4.0.5?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "net.bytebuddy:byte-buddy:jar:1.14.18:compile" : {
+      "coordinates" : "pkg:maven/net.bytebuddy/byte-buddy@1.14.18",
+      "description" : "Byte Buddy is a Java library for creating Java classes at run time.\n        This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/net.bytebuddy/byte-buddy@1.14.18?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.glassfish.jaxb:jaxb-runtime:jar:4.0.5:compile" : {
+      "coordinates" : "pkg:maven/org.glassfish.jaxb/jaxb-runtime@4.0.5",
+      "description" : "JAXB (JSR 222) Reference Implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.glassfish.jaxb/jaxb-runtime@4.0.5?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "javax.validation:validation-api:jar:2.0.1.Final:compile" : {
+      "coordinates" : "pkg:maven/javax.validation/validation-api@2.0.1.Final",
+      "description" : "Bean Validation (JSR-303) API.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/javax.validation/validation-api@2.0.1.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.hibernate.orm:hibernate-core:jar:6.5.2.Final:compile" : {
+      "coordinates" : "pkg:maven/org.hibernate.orm/hibernate-core@6.5.2.Final",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hibernate.orm/hibernate-core@6.5.2.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "javax.persistence:javax.persistence-api:jar:2.2:compile" : {
+      "coordinates" : "pkg:maven/javax.persistence/javax.persistence-api@2.2",
+      "description" : "Java(TM) Persistence API",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/javax.persistence/javax.persistence-api@2.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework:spring-jcl:jar:6.1.11:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-jcl@6.1.11",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-jcl@6.1.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.junit.jupiter:junit-jupiter-api:jar:5.10.3:test" : {
+      "coordinates" : "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.10.3",
+      "description" : "\"Module \"\"junit-jupiter-api\"\" of JUnit 5.\"",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.junit.jupiter/junit-jupiter-api@5.10.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.mockito:mockito-junit-jupiter:jar:5.11.0:test" : {
+      "coordinates" : "pkg:maven/org.mockito/mockito-junit-jupiter@5.11.0",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.mockito/mockito-junit-jupiter@5.11.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.26:compile" : {
+      "coordinates" : "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.26",
+      "description" : "Core Tomcat implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.26?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.boot:spring-boot-starter-tomcat:jar:3.3.2:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.3.2",
+      "description" : "Spring Boot Tomcat Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile" : {
+      "coordinates" : "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.hibernate.validator:hibernate-validator:jar:8.0.1.Final:compile" : {
+      "coordinates" : "pkg:maven/org.hibernate.validator/hibernate-validator@8.0.1.Final",
+      "description" : "Hibernate's Bean Validation (JSR-380) reference implementation.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hibernate.validator/hibernate-validator@8.0.1.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.awaitility:awaitility:jar:4.2.1:test" : {
+      "coordinates" : "pkg:maven/org.awaitility/awaitility@4.2.1",
+      "description" : "A Java DSL for synchronizing asynchronous operations",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.awaitility/awaitility@4.2.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.17.2:compile" : {
+      "coordinates" : "pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-xml@2.17.2",
+      "description" : "Data format extension for Jackson (http://jackson.codehaus.org) to offer\nalternative support for serializing POJOs as XML and deserializing XML as pojos.\nSupport implemented on top of Stax API (javax.xml.stream), by implementing core Jackson Streaming API types like JsonGenerator, JsonParser and JsonFactory.\nSome data-binding types overridden as well (ObjectMapper sub-classed as XmlMapper).",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-xml@2.17.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework:spring-core:jar:6.1.11:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-core@6.1.11",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-core@6.1.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.skyscreamer:jsonassert:jar:1.5.3:test" : {
+      "coordinates" : "pkg:maven/org.skyscreamer/jsonassert@1.5.3",
+      "description" : "A library to develop RESTful but flexible APIs",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.skyscreamer/jsonassert@1.5.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "io.smallrye:jandex:jar:3.1.2:runtime" : {
+      "coordinates" : "pkg:maven/io.smallrye/jandex@3.1.2",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/io.smallrye/jandex@3.1.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.beust:jcommander:jar:1.82:test" : {
+      "coordinates" : "pkg:maven/com.beust/jcommander@1.82",
+      "description" : "A Java framework to parse command line options with annotations.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.beust/jcommander@1.82?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.apache.logging.log4j:log4j-to-slf4j:jar:2.23.1:compile" : {
+      "coordinates" : "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.23.1",
+      "description" : "Binding between LOG4J 2 API and SLF4J",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.23.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile" : {
+      "coordinates" : "pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/jakarta.transaction/jakarta.transaction-api@2.0.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.sun.istack:istack-commons-runtime:jar:4.1.2:compile" : {
+      "coordinates" : "pkg:maven/com.sun.istack/istack-commons-runtime@4.1.2",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.sun.istack/istack-commons-runtime@4.1.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:compile" : {
+      "coordinates" : "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.2",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.hamcrest:hamcrest:jar:2.2:test" : {
+      "coordinates" : "pkg:maven/org.hamcrest/hamcrest@2.2",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hamcrest/hamcrest@2.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "jakarta.inject:jakarta.inject-api:jar:2.0.1:runtime" : {
+      "coordinates" : "pkg:maven/jakarta.inject/jakarta.inject-api@2.0.1",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/jakarta.inject/jakarta.inject-api@2.0.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.ow2.asm:asm:jar:9.6:test" : {
+      "coordinates" : "pkg:maven/org.ow2.asm/asm@9.6",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.ow2.asm/asm@9.6?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.boot:spring-boot-starter-json:jar:3.3.2:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.3.2",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-json@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.javassist:javassist:jar:3.27.0-GA:compile" : {
+      "coordinates" : "pkg:maven/org.javassist/javassist@3.27.0-GA",
+      "description" : "Javassist (JAVA programming ASSISTant) makes Java bytecode manipulation\n     simple.  It is a class library for editing bytecodes in Java.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.javassist/javassist@3.27.0-GA?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.aspectj:aspectjweaver:jar:1.9.22.1:compile" : {
+      "coordinates" : "pkg:maven/org.aspectj/aspectjweaver@1.9.22.1",
+      "description" : "The AspectJ weaver introduces advices to java classes",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.aspectj/aspectjweaver@1.9.22.1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.junit.jupiter:junit-jupiter-engine:jar:5.10.3:test" : {
+      "coordinates" : "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.10.3",
+      "description" : "\"Module \"\"junit-jupiter-engine\"\" of JUnit 5.\"",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.10.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.data:spring-data-commons:jar:3.3.2:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.data/spring-data-commons@3.3.2",
+      "description" : "Spring Data Commons. Interfaces and code shared between the various datastore specific implementations.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.data/spring-data-commons@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.mysql:mysql-connector-j:jar:8.0.33:compile" : {
+      "coordinates" : "pkg:maven/com.mysql/mysql-connector-j@8.0.33",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.mysql/mysql-connector-j@8.0.33?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.apache.tomcat.embed:tomcat-embed-websocket:jar:10.1.26:compile" : {
+      "coordinates" : "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.26",
+      "description" : "Core Tomcat implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.26?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework:spring-test:jar:6.1.11:test" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-test@6.1.11",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-test@6.1.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.boot:spring-boot-test:jar:3.3.2:test" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-test@3.3.2",
+      "description" : "Spring Boot Test",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-test@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.boot:spring-boot-starter-data-jpa:jar:3.3.2:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa@3.3.2",
+      "description" : "Spring Boot Data JPA Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.hibernate:hibernate-core:jar:5.4.33.Final:compile" : {
+      "coordinates" : "pkg:maven/org.hibernate/hibernate-core@5.4.33.Final",
+      "description" : "A module of the Hibernate Core project",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.hibernate/hibernate-core@5.4.33.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.junit.jupiter:junit-jupiter:jar:5.10.3:test" : {
+      "coordinates" : "pkg:maven/org.junit.jupiter/junit-jupiter@5.10.3",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.junit.jupiter/junit-jupiter@5.10.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.antlr:antlr4-runtime:jar:4.13.0:compile" : {
+      "coordinates" : "pkg:maven/org.antlr/antlr4-runtime@4.13.0",
+      "description" : "The ANTLR 4 Runtime",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.antlr/antlr4-runtime@4.13.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.26:compile" : {
+      "coordinates" : "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.26",
+      "description" : "Core Tomcat implementation",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.26?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework:spring-webmvc:jar:6.1.11:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-webmvc@6.1.11",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-webmvc@6.1.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.glassfish.jaxb:txw2:jar:4.0.5:compile" : {
+      "coordinates" : "pkg:maven/org.glassfish.jaxb/txw2@4.0.5",
+      "description" : "TXW is a library that allows you to write XML documents.",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.glassfish.jaxb/txw2@4.0.5?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.yaml:snakeyaml:jar:2.2:compile" : {
+      "coordinates" : "pkg:maven/org.yaml/snakeyaml@2.2",
+      "description" : "YAML 1.1 parser and emitter for Java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.yaml/snakeyaml@2.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework:spring-beans:jar:6.1.11:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-beans@6.1.11",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-beans@6.1.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework:spring-aop:jar:6.1.11:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-aop@6.1.11",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-aop@6.1.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.assertj:assertj-core:jar:3.25.3:test" : {
+      "coordinates" : "pkg:maven/org.assertj/assertj-core@3.25.3",
+      "description" : "Rich and fluent assertions for testing",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.assertj/assertj-core@3.25.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.boot:spring-boot-test-autoconfigure:jar:3.3.2:test" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.3.2",
+      "description" : "Spring Boot Test Auto-Configure",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.junit.platform:junit-platform-commons:jar:1.10.3:test" : {
+      "coordinates" : "pkg:maven/org.junit.platform/junit-platform-commons@1.10.3",
+      "description" : "\"Module \"\"junit-platform-commons\"\" of JUnit 5.\"",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.junit.platform/junit-platform-commons@1.10.3?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "jakarta.validation:jakarta.validation-api:jar:3.1.0:compile" : {
+      "coordinates" : "pkg:maven/jakarta.validation/jakarta.validation-api@3.1.0",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/jakarta.validation/jakarta.validation-api@3.1.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.xmlunit:xmlunit-core:jar:2.10.0:compile" : {
+      "coordinates" : "pkg:maven/org.xmlunit/xmlunit-core@2.10.0",
+      "description" : "XMLUnit for Java",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.xmlunit/xmlunit-core@2.10.0?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework:spring-aspects:jar:6.1.11:compile" : {
+      "coordinates" : "pkg:maven/org.springframework/spring-aspects@6.1.11",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-aspects@6.1.11?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.boot:spring-boot-starter-web:jar:3.3.2:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.3.2",
+      "description" : "Spring Boot Web Starter",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-starter-web@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.springframework.boot:spring-boot-autoconfigure:jar:3.3.2:compile" : {
+      "coordinates" : "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.3.2",
+      "description" : "Spring Boot AutoConfigure",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.3.2?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test" : {
+      "coordinates" : "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1",
+      "description" : "????JSON (JavaScript Object Notation) is a lightweight data-interchange format.\n      This is the org.json compatible Android implementation extracted from the Android SDK\n   ??",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    },
+    "org.jboss:jandex:jar:2.2.3.Final:compile" : {
+      "coordinates" : "pkg:maven/org.jboss/jandex@2.2.3.Final",
+      "reference" : "https://ossindex.sonatype.org/component/pkg:maven/org.jboss/jandex@2.2.3.Final?utm_source=ossindex-client&utm_medium=integration&utm_content=1.8.1"
+    }
+  }
+}

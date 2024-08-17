@@ -1,0 +1,28 @@
+name: CI/CD workflow
+
+on:
+  push:
+    paths: hospital-management/**
+
+jobs:
+   pre-commit-scan:
+      runs-on: ubuntu-latest
+        
+
+      steps:
+         - name: setup java
+           uses: actions/setup-java@v4
+           with:
+              distribution: 'temurin'
+              java-version: '21'
+
+         - name: checkout code
+           uses: actions/checkout@v2  
+
+
+         - name:
+                 |
+                 java -version
+                 ls -ltr  
+
+      

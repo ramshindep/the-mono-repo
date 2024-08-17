@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mypane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1360.0" style="-fx-background-color: fffffff;" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dnyanyog.addusers.AddUsersController">
+   <children>
+      <AnchorPane layoutY="59.0" prefHeight="641.0" prefWidth="180.0" styleClass="anchorpane-5" stylesheets="@../Style.css">
+         <children>
+            <Button fx:id="dashboard" alignment="CENTER" layoutY="30.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="50.0" prefWidth="180.0" styleClass="button-2" stylesheets="@../Style.css" text="Dasboard" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="patient" alignment="CENTER" layoutY="80.0" mnemonicParsing="false" onAction="#patient" prefHeight="50.0" prefWidth="180.0" styleClass="button-2" stylesheets="@../Style.css" text="Patient" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="cases" alignment="CENTER" layoutY="130.0" mnemonicParsing="false" onAction="#cases" prefHeight="50.0" prefWidth="180.0" styleClass="button-2" stylesheets="@../Style.css" text="Cases" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="appointments" alignment="CENTER" layoutY="180.0" mnemonicParsing="false" onAction="#appointments" prefHeight="50.0" prefWidth="180.0" styleClass="button-2" stylesheets="@../Style.css" text="Appointments" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" alignment="CENTER" layoutY="530.0" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="180.0" styleClass="button-2" stylesheets="@../Style.css" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutY="244.0" prefHeight="50.0" prefWidth="180.0" styleClass="anchorpane-11" stylesheets="@../Style.css">
+               <children>
+                  <Label layoutX="68.0" layoutY="11.0" text="Users" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane layoutX="180.0" layoutY="58.0" prefHeight="642.0" prefWidth="1180.0" stylesheets="@Stylesheet.css">
+         <children>
+            <AnchorPane layoutX="30.0" layoutY="45.0" prefHeight="558.0" prefWidth="1120.0" styleClass="anchorpane-8" stylesheets="@../Style.css">
+               <children>
+                  <Button fx:id="cancel" layoutX="275.0" layoutY="478.0" mnemonicParsing="false" onAction="#cancel" prefHeight="40.0" prefWidth="200.0" styleClass="button-3" stylesheets="@../Style.css" text="cancel" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="save" layoutX="770.0" layoutY="478.0" mnemonicParsing="false" onAction="#save" prefHeight="40.0" prefWidth="200.0" styleClass="button-4" stylesheets="@../Style.css" text="Save" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="email" layoutX="487.0" layoutY="121.0" prefHeight="35.0" prefWidth="350.0" styleClass="textfield-1" stylesheets="@../Style.css">
+                     <font>
+                        <Font name="Calisto MT" size="16.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox fx:id="role" layoutX="487.0" layoutY="232.0" prefHeight="35.0" prefWidth="350.0" styleClass="textfield-1" stylesheets="@../Style.css" />
+                  <Label layoutX="307.0" layoutY="139.0" text="Email">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="311.0" layoutY="303.0" text="Password">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="312.0" layoutY="238.0" text="Role">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="successfulMessage" layoutX="308.0" layoutY="416.0" prefHeight="45.0" prefWidth="543.0" visible="false">
+                     <children>
+                        <Label layoutX="186.0" layoutY="9.0" styleClass="label-3" stylesheets="@../Style.css" text="User Saved Successfully" textFill="#189274">
+                           <font>
+                              <Font name="Calibri Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="markImage" fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/green-tick-button-image.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <PasswordField fx:id="password" layoutX="487.0" layoutY="297.0" prefHeight="35.0" prefWidth="350.0" styleClass="textfield-1" stylesheets="@../Style.css">
+                     <font>
+                        <Font name="Calisto MT" size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <PasswordField fx:id="confirmpassword" layoutX="487.0" layoutY="365.0" prefHeight="35.0" prefWidth="350.0" styleClass="textfield-1" stylesheets="@../Style.css">
+                     <font>
+                        <Font name="Calisto MT" size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <Label layoutX="304.0" layoutY="371.0" text="Confirm Password">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="conformationMessage" layoutX="308.0" layoutY="422.0" prefHeight="45.0" prefWidth="494.0" visible="false">
+                     <children>
+                        <Label layoutX="11.0" layoutY="11.0" prefHeight="28.0" prefWidth="494.0" styleClass="label-4" text="Password and Confirm Password do not match.">
+                           <font>
+                              <Font name="Calibri Bold" size="24.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="userExistMessage" layoutX="314.0" layoutY="420.0" prefHeight="45.0" prefWidth="494.0" visible="false">
+                     <children>
+                        <Label layoutX="63.0" layoutY="5.0" prefHeight="35.0" prefWidth="292.0" text="User Name already exists" textFill="#d71b1b">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="307.0" layoutY="74.0" text="UserName">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userName" layoutX="487.0" layoutY="56.0" prefHeight="35.0" prefWidth="350.0" styleClass="textfield-1" stylesheets="@../Style.css">
+                     <font>
+                        <Font name="Calisto MT" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="mobileNumber" layoutX="487.0" layoutY="177.0" prefHeight="35.0" prefWidth="350.0" styleClass="textfield-1" stylesheets="@../Style.css">
+                     <font>
+                        <Font name="Calisto MT" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="308.0" layoutY="183.0" text="MobileNumber">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="60.0" prefWidth="1360.0" styleClass="anchorpane-7" stylesheets="@../Style.css">
+         <children>
+            <AnchorPane layoutX="3.0" layoutY="5.0" prefHeight="50.0" prefWidth="180.0" styleClass="anchorpane-6" stylesheets="@Style.css">
+               <children>
+                  <ImageView fx:id="sublogoImage" fitHeight="50.0" fitWidth="50.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo2.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="55.0" layoutY="15.0" text="जी" textFill="#e16737">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="15.0" text="वयुर्भवति">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="1110.0" prefHeight="60.0" prefWidth="250.0" styleClass="anchorpane-3" stylesheets="@../Style.css">
+               <children>
+                  <Label layoutX="70.0" layoutY="17.0" styleClass="label-1" stylesheets="@Style.css" text="User">
+                     <font>
+                        <Font name="Arial Unicode MS" size="18.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="15.0" layoutY="10.0" prefHeight="40.0" prefWidth="40.0" styleClass="profile-3" stylesheets="@Stylesheet.css">
+                     <children>
+                        <ImageView fx:id="userImage" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" styleClass="profile-3">
+                           <image>
+                              <Image url="@../images/profile-image.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Label layoutX="250.0" layoutY="5.0" styleClass="label-1" stylesheets="@Style.css" text="Add User">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
