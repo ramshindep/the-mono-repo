@@ -33,7 +33,7 @@ jobs:
          - name: build image
            run: |
                 cd hospital-management/patient-service
-                 mvn clean docker:build
+                 mvn clean install docker:build
                  
               
             
