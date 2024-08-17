@@ -29,7 +29,6 @@ jobs:
                  
          - name: check git leaks
            run: |
-               cd hospital-management/patient-service
                docker run --rm -v "$(pwd)":/path rameshwarshinde/gitleaks detect -v
                  
          - name: check oss scan
@@ -37,7 +36,11 @@ jobs:
                 cd hospital-management/patient-service
                 mvn ossindex:audit
                 
-          
+         - name: check liscense finder
+           run: |
+                 cd hospital-management/patient-service
+                 docker run --rm -v "$(pwd)":/scan rameshwarshinde/license-finder
+             
                  
 
       
