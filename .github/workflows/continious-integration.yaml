@@ -195,7 +195,7 @@ jobs:
       - name: Re-tag the image
         run: |
           cd hospital-management/api-gateway
-          docker tag org.dnyanyog/api-gateway:latest ${{ vars.DOCKER_HUB_REGISTRY }}/api-gateway:latest
+          docker tag dnyanyog.org/api-gateway:latest ${{ vars.DOCKER_HUB_REGISTRY }}/api-gateway:latest
 
       - name: Log in to GitHub Docker Registry  
         uses: docker/login-action@v2
