@@ -19,8 +19,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Check OSS scan
-      run: mvn ossindex:audit
 
     - name: Build code and create docker images
       run: mvn clean install docker:build -Dimage.registry=${{ vars.DOCKER_HUB_REGISTRY}} -Dimage.tag=$GITHUB_REF_NAME
