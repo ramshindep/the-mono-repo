@@ -2,8 +2,8 @@ name: base image build
 
 on:
   push:
-    paths: 
-      - dev-sec-ops/base-images/open-jdk24-slim.dockerfile
+    paths: dev-sec-ops/base-images/open-jdk24-slim.dockerfile
+       
 
 jobs:
   build-open-jdk24-slim-image:
