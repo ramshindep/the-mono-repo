@@ -3,7 +3,7 @@ name: base image build
 on:
   push:
     paths: 
-      - dev-sec-ops/base-images/license-finder.dockerfile
+      - dev-sec-ops/base-images/license-finder.dockerfile/**
 
 jobs:
   build-license-finder-images:
