@@ -1,1 +1,48 @@
+name: CI/CD workflow
 
+on:
+  push:
+    paths:
+      - hospital-management/**
+
+jobs:
+  pre-commit-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Check Git leaks
+        continue-on-error: true
+        run: |
+          docker run --rm -v "$(pwd)":/path rameshwarshinde/gitleaks detect -v
+
+      - name: Check OSS scan
+        run: |
+          cd hospital-management/patient-service
+          mvn ossindex:audit
+
+      - name: Build image
+        run: |
+          cd hospital-management/patient-service
+          mvn clean install docker:build
+
+      - name: Re-tag the image
+        run: |
+          cd hospital-management/patient-service
+          docker tag org.dnyanyog/patient-service:latest ${{ vars.DOCKER_HUB_REGISTRY }}/patient-service:latest
+
+      - name: Log in to GitHub Docker Registry  
+        uses: docker/login-action@v2
+        with:
+          username: ${{ vars.DOCKER_HUB_REGISTRY }}
+          password: ${{ secrets.DOCKER_HUB_PAT }}
+
+      - name: Docker push
+        run: docker push ${{ vars.DOCKER_HUB_REGISTRY }}/patient-service:latest
