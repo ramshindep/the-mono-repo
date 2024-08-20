@@ -19,6 +19,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: check gitleaks
+      run: |
+          docker pull rameshwarshinde/gitleaks
+          docker run --rm -v "$(pwd)":/path rameshwarshinde/gitleaks:latest detect -v
+
     - name: Build code and create docker images
       run: |
         cd  hospital-management/api-gateway
