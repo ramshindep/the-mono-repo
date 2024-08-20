@@ -1,1 +1,35 @@
+name: CI/CD workflow
+on:
+  push:
+    paths:
+      - hospital-management/appointment-service
 
+jobs:
+  pre-commit-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+
+      - name: Check OSS scan
+        run: mvn ossindex:audit
+
+      - name: Build code and create docker images
+        run: mvn clean install docker:build -Dimage.registry=${{vars.DOCKER_HUB_REGISTRY }} -Dimage.tag=$GITHUB_REF_NAME
+       
+
+      - name: Log in to GitHub Docker Registry  
+        uses: docker/login-action@v2
+        with:
+          username: ${{ vars.DOCKER_HUB_REGISTRY }}
+          password: ${{ secrets.DOCKER_HUB_PAT }}
+
+      - name: Docker push
+        run: docker push ${{ vars.DOCKER_HUB_REGISTRY }}/appointment-service:$GITHUB_REF_NAME
