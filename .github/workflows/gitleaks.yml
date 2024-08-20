@@ -2,9 +2,9 @@ name: build gitleaks base image
 
 on:
   push:
-    paths: 
-      - dev-sec-ops/base-images/gitleaks.dockerfile
+    paths: dev-sec-ops/base-images/gitleaks.dockerfile
 
+       
 jobs:
   build-gitleaks-image:
     runs-on: ubuntu-latest
