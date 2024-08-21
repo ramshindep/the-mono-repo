@@ -56,4 +56,5 @@ jobs:
     - name: Docker push
       run: |
          CURRENT_FOLDER_NAME=$(basename $(pwd))
+         echo CURRENT_FOLDER_NAME
          docker push ${{ vars.DOCKER_HUB_REGISTRY }}/CURRENT_FOLDER_NAME:$GITHUB_REF_NAME
