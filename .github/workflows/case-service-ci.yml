@@ -33,7 +33,7 @@ jobs:
       continue-on-error: true
       run: |
           cd hospital-management/case-service
-          docker run --rm -v "${pwd}":/scan ${{ vars.DOCKER_HUB_REGISTRY }}/license-finder:latest 
+          docker run --rm -v "$(pwd)":/scan ${{ vars.DOCKER_HUB_REGISTRY }}/license-finder:latest 
 
     - name: Build code and create docker images
       run: |
