@@ -49,7 +49,7 @@ jobs:
  
     - name: Build code and create docker images
       run: |
-        cd  hospital-management/api-gateway
+        cd hospital-management/api-gateway
         mvn clean install docker:build -Dimage.registry=${{ vars.DOCKER_HUB_REGISTRY }} -Dimage.tag=$GITHUB_REF_NAME
 
     - name: Log in to GitHub Docker Registry  
