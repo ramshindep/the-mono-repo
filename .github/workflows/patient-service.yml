@@ -24,12 +24,15 @@ jobs:
         cd hospital-management/patient-service
         mvn com.spotify.fmt:fmt-maven-plugin:check
   
+    - name: check gitleaks
+      continue-on-error: true
+      run: docker run --rm -v "$(pwd)":/path ${{ vars.DOCKER_HUB_REGISTRY }}/gitleaks:latest detect -v
 
     - name: license-finder
       continue-on-error: true
       run: |
           cd hospital-management/patient-service
-          docker run --rm -v "${pwd}":/scan ${{ vars.DOCKER_HUB_REGISTRY }}/license-finder:latest  
+          docker run --rm -v "$(pwd)":/scan ${{ vars.DOCKER_HUB_REGISTRY }}/license-finder:latest  
           
     - name: Check OSS scan
       run: |
