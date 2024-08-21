@@ -10,13 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Setup Java
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin'
-        java-version: '21'
+      - name: Checkout code
+        uses: actions/checkout@v2
+    
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
 
-    - name: Run maven clean
-      run: |
-        cd hospital-management/hospital-console
-        mvn clean
+      - name: Run maven clean
+        run: |
+          cd hospital-management/hospital-console
+           mvn clean
