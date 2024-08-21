@@ -28,11 +28,6 @@ jobs:
          cd hospital-management/api-gateway
           mvn com.spotify.fmt:fmt-maven-plugin:check
          
-    - name: license-finder
-      continue-on-error: true
-      run: |
-          cd hospital-management/api-gateway
-          docker run --rm -v "$(pwd)":/scan ${{ vars.DOCKER_HUB_REGISTRY }}/license-finder:latest
 
     - name: oss scan
       continue-on-error: true
