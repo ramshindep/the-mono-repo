@@ -25,14 +25,14 @@ jobs:
 
     - name: Perform Google Formatter Check
       run: |
-        cd Hospital-Management/api-gateway
+        cd Hospital-Management/appointment-service
         mvn com.spotify.fmt:fmt-maven-plugin:check
   
 
     - name: license-finder
       continue-on-error: true
       run: |
-          cd hospital-management/api-gateway
+          cd hospital-management/appointment-service
           docker run --rm -v "${pwd}":/scan ${{ vars.DOCKER_HUB_REGISTRY }}/license-finder:latest  
           
 
@@ -44,7 +44,7 @@ jobs:
     - name: OWASP Scan
       if: false
       run: |
-         cd hospital-management/api-gateway
+         cd hospital-management/appointment-service
          mvn org.owasp:dependency-check-maven:check
          
     - name: Build code and create docker images
@@ -60,6 +60,6 @@ jobs:
 
     - name: Docker push
       run: |
-        cd Hospital-Management/api-gateway
+        cd Hospital-Management/appointment-service
         CURRENT_FOLDER_NAME=$(basename $(pwd))
-        docker push ${{ vars.DOCKER_HUB_REGISTRY }}/appointment-service:$GITHUB_REF_NAME
+        docker push ${{ vars.DOCKER_HUB_REGISTRY }}/$CURRENT_FOLDER_NAME:$GITHUB_REF_NAME
