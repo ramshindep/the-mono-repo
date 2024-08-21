@@ -25,7 +25,7 @@ jobs:
 
     - name: Perform Google Formatter Check
       run: |
-        cd Hospital-Management/appointment-service
+        cd hospital-management/appointment-service
         mvn com.spotify.fmt:fmt-maven-plugin:check
   
 
@@ -60,6 +60,6 @@ jobs:
 
     - name: Docker push
       run: |
-        cd Hospital-Management/appointment-service
+        cd hospital-management/appointment-service
         CURRENT_FOLDER_NAME=$(basename $(pwd))
         docker push ${{ vars.DOCKER_HUB_REGISTRY }}/$CURRENT_FOLDER_NAME:$GITHUB_REF_NAME
