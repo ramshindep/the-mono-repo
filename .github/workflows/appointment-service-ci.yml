@@ -19,11 +19,34 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: check gitleaks
+      continue-on-error: true
+      run: docker run --rm -v "$(pwd)":/path ${{ vars.DOCKER_HUB_REGISTRY }}/gitleaks:latest detect -v
+
+    - name: Perform Google Formatter Check
+      run: |
+        cd Hospital-Management/api-gateway
+        mvn com.spotify.fmt:fmt-maven-plugin:check
+  
+
+    - name: license-finder
+      continue-on-error: true
+      run: |
+          cd hospital-management/api-gateway
+          docker run --rm -v "${pwd}":/scan ${{ vars.DOCKER_HUB_REGISTRY }}/license-finder:latest  
+          
+
     - name: Check OSS scan
       run: |
         cd hospital-management/appointment-service
         mvn ossindex:audit
 
+    - name: OWASP Scan
+      if: false
+      run: |
+         cd hospital-management/api-gateway
+         mvn org.owasp:dependency-check-maven:check
+         
     - name: Build code and create docker images
       run: |
         cd hospital-management/appointment-service
@@ -36,4 +59,7 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_PAT }}
 
     - name: Docker push
-      run: docker push ${{ vars.DOCKER_HUB_REGISTRY }}/appointment-service:$GITHUB_REF_NAME
+      run: |
+        cd Hospital-Management/api-gateway
+        CURRENT_FOLDER_NAME=$(basename $(pwd))
+        docker push ${{ vars.DOCKER_HUB_REGISTRY }}/appointment-service:$GITHUB_REF_NAME
