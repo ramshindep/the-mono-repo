@@ -60,5 +60,6 @@ jobs:
 
     - name: Docker push
       run: |
+         cd hospital-management/api-gateway
          CURRENT_FOLDER_NAME=$(basename $(pwd))
          docker push ${{ vars.DOCKER_HUB_REGISTRY }}/$CURRENT_FOLDER_NAME:$GITHUB_REF_NAME
