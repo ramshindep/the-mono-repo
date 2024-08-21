@@ -23,6 +23,11 @@ jobs:
       continue-on-error: true
       run: docker run --rm -v "$(pwd)":/path ${{ vars.DOCKER_HUB_REGISTRY }}/gitleaks:latest detect -v
 
+    - name: google formatter check
+      run: |
+         cd hospital-management/api-gateway
+          mvn com.spotify.fmt:fmt-maven-plugin:check
+         
     - name: license-finder
       continue-on-error: true
       run: |
