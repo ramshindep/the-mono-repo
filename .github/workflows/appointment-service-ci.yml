@@ -33,7 +33,7 @@ jobs:
       continue-on-error: true
       run: |
           cd hospital-management/appointment-service
-          docker run --rm -v "${pwd}":/scan ${{ vars.DOCKER_HUB_REGISTRY }}/license-finder:latest  
+          docker run --rm -v "$(pwd)":/scan ${{ vars.DOCKER_HUB_REGISTRY }}/license-finder:latest  
           
 
     - name: Check OSS scan
