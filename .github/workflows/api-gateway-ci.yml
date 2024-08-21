@@ -27,7 +27,7 @@ jobs:
       continue-on-error: true
       run: |
           cd hospital-management/api-gateway
-          docker run --rm -v "${pwd}":/scan ${{ vars.DOCKER_HUB_REGISTRY }}/license-finder:latest
+          docker run --rm -v "$(pwd)":/scan ${{ vars.DOCKER_HUB_REGISTRY }}/license-finder:latest
 
     - name: oss scan
       continue-on-error: true
@@ -56,5 +56,4 @@ jobs:
     - name: Docker push
       run: |
          CURRENT_FOLDER_NAME=$(basename $(pwd))
-         echo CURRENT_FOLDER_NAME
-         docker push ${{ vars.DOCKER_HUB_REGISTRY }}/CURRENT_FOLDER_NAME:$GITHUB_REF_NAME
+         docker push ${{ vars.DOCKER_HUB_REGISTRY }}/$CURRENT_FOLDER_NAME:$GITHUB_REF_NAME
