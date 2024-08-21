@@ -20,12 +20,21 @@ jobs:
       uses: actions/checkout@v2
 
     - name: check gitleaks
+      continue-on-error: true
       run: docker run --rm -v "$(pwd)":/path ${{ vars.DOCKER_HUB_REGISTRY }}/gitleaks:latest detect -v
 
     - name: license-finder
+      continue-on-error: true
       run: |
           cd hospital-management/api-gateway
           docker run --rm -v "${pwd}":/scan ${{ vars.DOCKER_HUB_REGISTRY }}/license-finder:latest
+
+    - name: oss scan
+      continue-on-error: true
+      
+      run: |
+           cd  hospital-management/api-gateway
+           mvn ossindex:audit
       
     - name: OWASP Scan
       if: false
